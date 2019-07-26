@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style/style.css" rel="stylesheet">
+    <link href="style/core-ui-select.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="style/jquery.scrollpane.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+    <div class="center_container">
+		<a href="/" title="" class="logo">Bestba.ru</a>
+		<div class="top_menu">
+            <ul>
+                <li><span class="login_pic"></span><a href="#" title="" class="login">Вход</a></li>
+                <li><span class="reg_pic"></span><a href="#" title="" class="regist">Регистрация</a></li>
+            </ul>
+		</div>
+    </div>
+</header><!-- header-->
+    <nav class="navigation center_container">
+        <ul>
+            <li><span class="biz_pic"></span><a href="#" title="" class="biz_text">Подбор бизнеса</a></li>
+            <li><span class="vip_advert_pic"></span><a href="#" title="" class="vip_advert_text">Премиум объявления</a></li>
+            <li><span class="add_advert_pic"></span><a href="#" title="" class="add_advert_text">Разместить объявление </a></li>
+            <li><span class="favorites_pic"></span><a href="#" title="" class="favorites_text">Избранное</a></li>
+            <li><a href="#" title="" class="search_button"><span class="search_map_pic"></span>поиск на карте</a></li>
+        </ul>
+    </nav>
+    <div class="filter">
+        <div class="center_container">
+            <div class="filter_select want">
+                <lable class="filter_lable">Я хочу</lable>
+                <select class="b-core-ui-select__select" id="want" name="countries_2">
+                    <option value="buy">Купить</option>
+                    <option value="sell">Продать</option>
+                </select>
+            </div>
+            <div class="filter_select what">
+                <lable class="filter_lable">что</lable>
+                <select class="b-core-ui-select__select" id="what" name="countries_2">
+                    <option value="car_wash">Автомойку</option>
+                    <option value="car">машину</option>
+                </select>
+            </div>
+            <div class="filter_select where">
+                <lable class="filter_lable">Где</lable>
+                <select class="b-core-ui-select__select" id="where" name="countries_2">
+                    <option value="car_wash">Москва</option>
+                    <option value="car">Крым</option>
+                </select>
+            </div>
+            <a href="#" title="" class="search_button"><span class="search_pic"></span>начать поиск</a>
+        </div>
+    </div>
+<div class="wrapper">
+
+	<main class="content">
+		<div class="sing_in">
+		    <span class="sing_in_span">Вход</span>
+		    <div><lable>Email</lable> <input></div>
+		    <div class="last_div"><lable>Пароль</lable> <input></div>
+		    <a href="#" title="" class="forgot_your_password">Забыли пароль?</a>
+		    <input type="submit" class="button" value="Войти">
+		    <a href="#" title="" class="sing_in_registr">Регистрация</a>
+		</div>
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
+<footer class="center_container">
+    <div class="left_colum">
+        <a href="/" title="" class="logo">Bestba.ru</a>
+        <p>«Bestba»  Copyright ® 2014</p>
+    </div>
+    <div class="right_colum">
+        <ul>
+            <li><a href="#" title="">Контакты</a></li>
+            <li><a href="#" title="">Реклама на сайте</a></li>
+        </ul>
+    </div>
+	<a href="#" title="" class="footer_pic"></a>
+</footer><!-- footer -->
+    <script src="js/lib/jquery/jquery-1.7.1.min.js"></script>
+    <script src="js/lib/jquery/plugins/jquery.mousewheel.js"></script>
+    <script src="js/lib/jquery/plugins/jquery.scrollpane.js"></script>
+    <script src="js/jquery.core-ui-select.js"></script>
+</body>
+</html>

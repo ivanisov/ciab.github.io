@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="style/style.css" rel="stylesheet">
+    <link href="style/core-ui-select.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="style/jquery.scrollpane.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="style/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+    <div class="center_container profile_page">
+		<a href="/" title="" class="logo">Bestba.ru</a>
+		<div class="top_menu">
+            <ul>
+                <li><span class="reg_pic"></span><a href="#" title="" class="regist">Личный кабинет</a></li>
+                <li><a href="#" title="" class="login">Выход</a></li>
+            </ul>
+		</div>
+    </div>
+</header><!-- header-->
+    <nav class="navigation center_container">
+        <ul>
+            <li><span class="biz_pic"></span><a href="#" title="" class="biz_text">Подбор бизнеса</a></li>
+            <li><span class="vip_advert_pic"></span><a href="#" title="" class="vip_advert_text">Премиум объявления</a></li>
+            <li><span class="add_advert_pic"></span><a href="#" title="" class="add_advert_text">Разместить объявление </a></li>
+            <li><span class="favorites_pic"></span><a href="#" title="" class="favorites_text">Избранное</a></li>
+        </ul>
+    </nav>
+    <div class="profile_tabs_menu">
+        <ul class="nav nav-tabs center_container">
+          <li class="active"><a href="#tarif" data-toggle="tab">Выбор тарифа</a></li>
+          <li><a href="#profile" data-toggle="tab">Объявления</a></li>
+          <li><a href="#pay" data-toggle="tab" class="add_balance">Пополнить баланс</a></li>
+          <li><a href="#settings" data-toggle="tab">Настройки</a></li>
+        </ul>
+    </div>
+<div class="wrapper profile">
+
+	<main class="content center_container">
+	    <div id="myTabContent" class="tab-content center_container">
+          <div class="tab-pane tarif fade active in" id="tarif">
+            <div class="tarif_block">
+                <div class="">
+                    <label>Выберите регион, в котором будете размещать объявления</label>
+                    <select class="b-core-ui-select__select" id="country" name="countries_2">
+                        <option value="buy">Москва</option>
+                        <option value="sell">Крым</option>
+                    </select>
+                </div>
+                <div class="">
+                    <label>Возможные тарифы</label>
+                    <input id="base" type="radio" name="base" class="radio_input" />
+                    <label for="base" class="radio_box radio_base">Базовый</label>
+                    <input id="pro" type="radio" name="pro" class="radio_input" />
+                    <label for="pro" class="radio_box">Профи</label>
+                </div>
+            </div>
+            <div class="tarif_block">
+                <label>Информация о текущем тарифе</label>
+                <table>
+                  <tr>
+                    <td>Название тарифа</td>
+                    <td>Некоммерческий</td>
+                  </tr>
+                  <tr>
+                    <td>Тариф предназначен для региона</td>
+                    <td><span class="table_none"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Ежедневная абонентская плата</td>
+                    <td><span class="table_none"></span></td>
+                  </tr>
+                  <tr>
+                    <td>XML-импорт платных объявлений в аккаунт</td>
+                    <td><span class="table_none"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Статус тарифа</td>
+                    <td>некоммерческий</td>
+                  </tr>
+                </table>
+            </div>
+            <label>Информация о текущем тарифе</label>
+                <table class="table_two">
+                  <tr>
+                    <td class="table_razdel">Раздел</td>
+                    <td class="table_free">Бесплатное</td>
+                    <td class="table_pay"><span class="table_pay_pic"></span>Платное</td>
+                    <td class="table_vip"><span class="vip_advert_pic"></span>Премиум</td>
+                  </tr>
+                  <tr>
+                    <td>Автобизнес</td>
+                    <td><span class="table_none"></span></td>
+                    <td><span class="table_yeas"></span></td>
+                    <td><span class="table_yeas"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Красота и здоровье</td>
+                    <td><span class="table_none"></span></td>
+                    <td><span class="table_yeas"></span></td>
+                    <td><span class="table_yeas"></span></td>
+                  </tr>
+                  <tr>
+                    <td>Гостиничный бизнес</td>
+                    <td><span class="table_none"></span></td>
+                    <td><span class="table_none"></span></td>
+                    <td><span class="table_yeas"></span></td>
+                  </tr>
+                  <tr>
+                    <td>И так далее по списку</td>
+                    <td><span class="table_none"></span></td>
+                    <td><span class="table_none"></span></td>
+                    <td><span class="table_yeas"></span></td>
+                  </tr>
+                </table>
+          </div>
+          <div class="tab-pane advertisement fade" id="profile">
+                <div class="tarif_block you_advertisement">
+                    <p>Ваши объявления</p>
+                    <a href="#" title="" class="name_oplata">Покупка бизнеса</a>
+                    <table class="">
+                         <thead>
+                              <tr>
+                                <td class="table_namber">№</td>
+                                <td class="table_adres">Адрес</td>
+                                <td class="">Тип бизнеса<br>Отрасль</td>
+                                <td class="nedvijmost">Недвижимость</td>
+                                <td class="">Стоимость</td>
+                                <td class="dop-sved">Доп. сведения</td>
+                                <td class="">Контакты</td>
+                                <td class="">Описание</td>
+                              </tr>
+                         </thead>
+                          <tr>
+                            <td class="table_namber">1</td>
+                            <td class="table_adres">Москва, ул. Название улицы, д.5</td>
+                            <td class="">Автомобильный / Автомойка</td>
+                            <td class="table_nedvijmost">Аренда / Под автобизнес</td>
+                            <td class="">10 777 770 руб. (за всё)</td>
+                            <td class="table_dop-sved">Срок существования: 7 мес.<br>Ежемесячный обор. : 900 тыс. руб<br> Ежемесячная приб. : 300 тыс. руб<br>Ежемесячный расх. : 600 тыс. руб<br>Требует влож. : нет<br>Орган. Прав. Форма : ООО<br> Управленцев : 2<br>Сотрудников : 7 ( остаются)<br>Причина продажи : Пенсия</td>
+                            <td class="table_contacts">8(985)774-78-75</td>
+                            <td class="table_opis">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+                            <ul>
+                                <li class="table_edit"><a href="#" title="">Редактировать</a></li>
+                                <li><span class="vip_advert_pic"></span><a href="#" title="" class="table_up">Поднять</a> <a href="#" title="" class="table_del">Удалить</a><li>
+                            </ul>
+                            </td>
+                          </tr>
+                    </table>
+                    <input type="submit" class="button" value="Создать новое объявление">
+                </div>
+                <div class="tarif_block sell_biz">
+                    <a href="#" title="" class="name_oplata">Продажа бизнеса</a>
+                    <p>У вас нет объявлений о подаже бизнеса</p>
+                    <input type="submit" class="button" value="Создать новое объявление">
+                </div>
+                <input id="first" type="checkbox" name="first">
+                <label for="first"></label>
+                <label>Сообщать мне на e-mail , если какое-то из моих объявлений станет неактивным (например: истек срок хранения, не прошло модерацию, и т.д.)</label>
+          </div>
+          <div class="tab-pane fade" id="pay">
+            <div class="colum">
+                <p>Физическим лицам:</p>
+                <div class="bloc_oplata">
+                    <a href="#" title="" class="logo_oplata"><img src="images/visa_mc.png" alt=""></a>
+                    <a href="#" title="" class="name_oplata">Оплата банковской картой</a>
+                    <span>Сумма:</span>
+                    <input><lable>руб.</lable>
+                    <input type="submit" class="button" value="Оплатить">
+                </div>
+                <div class="bloc_oplata">
+                    <a href="#" title="" class="logo_oplata"><img src="images/yd.png" alt=""></a>
+                    <a href="#" title="" class="name_oplata">Оплата банковской картой</a>
+                    <span>Сумма:</span>
+                    <input><lable>руб.</lable>
+                    <input type="submit" class="button" value="Оплатить">
+                </div>
+                <div class="bloc_oplata">
+                    <a href="#" title="" class="logo_oplata"><img src="images/WM.png" alt=""></a>
+                    <a href="#" title="" class="name_oplata">Оплата банковской картой</a>
+                    <span>Сумма:</span>
+                    <input><lable>руб.</lable>
+                    <input type="submit" class="button" value="Оплатить">
+                </div>
+            </div>
+            <div class="colum end">
+                <p>Юридическим лицам:</p>
+                <div class="bloc_oplata">
+                    <a href="#" title="" class="name_oplata">Перечислением на расчетный счет</a>
+                    <span>Название организации</span>
+                    <input class="name_one"> <input class="name_two">
+                    <span>ИНН организации</span>
+                    <input class="inn">
+                    <span>Сумма:</span>
+                    <input><lable>руб.</lable>
+                    <input type="submit" class="button" value="Оплатить">
+                </div>
+            </div>
+            <div class="bottom_text">
+                <p>Данные способы оплаты предоставляются физическим лицам<br>на условиях публичной оферты, по соответствующим тарифам.</p>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settings">
+            <ul>
+                <li><label>Мобильный телефон:</label> <span>(987) 654 43 21</span></li>
+                <li><label>Тариф:</label> <span>Некоммерческий</span></li>
+                <li><label>E-mail:</label> <input type="text" placeholder="mail@example.com"></li>
+                <li><label>Изменение пароля:</label> <input type="text"> <span class="after_text">при изменении пароля допускаются только цифры и латинские буквы</span></li>
+                <li><label>Повтор нового пароля:</label> <input type="text"> <span  class="after_text">нужно для подтверждения нового пароля</span></li>
+                <li><label>Секретный код:</label> <input type="text"> <span  class="after_text">требуется для подтверждения прав на изменение настроек <a href="#" title="">что делать если потерян Секретный код?</a></span></li>
+            </ul>
+            <input type="submit" class="button" value="сохранить изменения">
+          </div>
+        </div>
+	</main><!-- .content -->
+
+</div><!-- .wrapper -->
+
+<footer class="center_container profile_footer">
+    <div class="left_colum">
+        <a href="/" title="" class="logo">Bestba.ru</a>
+        <p>«Bestba»  Copyright ® 2014</p>
+    </div>
+    <div class="right_colum">
+        <ul>
+            <li><a href="#" title="">Контакты</a></li>
+            <li><a href="#" title="">Реклама на сайте</a></li>
+        </ul>
+    </div>
+	<a href="#" title="" class="footer_pic"></a>
+</footer><!-- footer -->
+    <script src="js/lib/jquery/jquery-1.7.1.min.js"></script>
+    <script src="js/lib/jquery/plugins/jquery.mousewheel.js"></script>
+    <script src="js/lib/jquery/plugins/jquery.scrollpane.js"></script>
+    <script src="js/jquery.core-ui-select.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
